@@ -20,5 +20,5 @@ set(TestsFiles
 add_executable(GtestTests ${TestsFiles} ${SrcFiles})
 target_link_libraries(GtestTests nlohmann_json::nlohmann_json GTest::gtest_main)
 include(GoogleTest)
-target_include_directories(GtestTests PUBLIC ${MY_INCLUDE_DIR})
+target_include_directories(GtestTests PUBLIC ${CMAKE_SOURCE_DIR}/src/lib)
 gtest_discover_tests(GtestTests)

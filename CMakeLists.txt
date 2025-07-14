@@ -11,7 +11,7 @@ set(MY_SRC_DIR ${CMAKE_SOURCE_DIR}/src)
 
 include(FetchContent)
 
-include_directories("includes/")
+include_directories("../src/lib")
 
 
 FetchContent_Declare(
