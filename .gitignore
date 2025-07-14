@@ -12,3 +12,4 @@ test/GtestTests
 conf.json
 /.vscode/
 /build/
+./src/if-idf-engine.cpp
