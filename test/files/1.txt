@@ -1,0 +1,30 @@
+For linux:
+
+You can build it by your self or download a ready-made archive
+
+How to download:
+
+    Download the archive whose name is suitable for your OS
+    Unpack where you want
+    Configure conf.json, you can find a manual on it in examples/Examples.md or touch me.
+
+How to build:
+
+    Make sure you have CMake (minimum version - 3.24) Git and any C++ compiler that can support C++23
+    Run this command:
+
+        git clone "https://github.com/TheJustRusik/search-engine"
+
+    Go to search-engine dir:
+
+        cd search-engine
+
+    Generate CMake cache and files:
+
+        cmake -S . -B build
+
+    Build:
+
+        cmake --build build
+
+In build folder you will have SearchEngine application. After that, take the conf.json from the examples folder (you can also take requests.json) and put them next to the SearchEngine application. Set up conf.json, and you can start using the search engine!
